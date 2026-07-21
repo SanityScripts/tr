@@ -626,7 +626,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ItemDatabase = require(ReplicatedStorage.Collection.ItemDatabase)
 local PlayerCollection = require(ReplicatedStorage.Collection.PlayerCollectionService)
 local myItems = PlayerCollection.GetCollection() or {}
-local rawData = game:HttpGet("https://raw.githubusercontent.com/evelynnscripts/vexal/refs/heads/main/value-list.json")
+local rawData = game:HttpGet("https://raw.githubusercontent.com/SanityScripts/tr/refs/heads/main/value-list.json")
 local valueData = HttpService:JSONDecode(rawData)
 
 local function scanInventory()
